@@ -1,0 +1,61 @@
+File: C:\Users\adity\OneDrive\Desktop\bot_detection_vscode_fixed\bot_detection_vscode_fixed\data\raw\twitter_human_bots_dataset.csv
+Shape: (37438, 20)
+
+Columns and data types:
+  Unnamed: 0: int64
+  created_at: object
+  default_profile: bool
+  default_profile_image: bool
+  description: object
+  favourites_count: int64
+  followers_count: int64
+  friends_count: int64
+  geo_enabled: bool
+  id: int64
+  lang: object
+  location: object
+  profile_background_image_url: object
+  profile_image_url: object
+  screen_name: object
+  statuses_count: int64
+  verified: bool
+  average_tweets_per_day: float64
+  account_age_days: int64
+  account_type: object
+
+Missing values:
+  Unnamed: 0: 0
+  created_at: 0
+  default_profile: 0
+  default_profile_image: 0
+  description: 7257
+  favourites_count: 0
+  followers_count: 0
+  friends_count: 0
+  geo_enabled: 0
+  id: 0
+  lang: 7957
+  location: 4
+  profile_background_image_url: 4499
+  profile_image_url: 1
+  screen_name: 0
+  statuses_count: 0
+  verified: 0
+  average_tweets_per_day: 0
+  account_age_days: 0
+  account_type: 0
+
+Total missing cells: 19718
+Duplicate rows: 0
+Duplicate values in likely ID columns:
+  id: 0
+
+Detected label column: account_type
+Label distribution (original values):
+  human: 25013
+  bot: 12425
+Binary mapping (1=bot, 0=human): {'bot': 1, 'human': 0}
+Normalized bot count: 12425
+Normalized human count: 25013
+
+Potential non-ID feature columns: ['Unnamed: 0', 'created_at', 'default_profile', 'default_profile_image', 'description', 'favourites_count', 'followers_count', 'friends_count', 'geo_enabled', 'lang', 'location', 'profile_background_image_url', 'profile_image_url', 'screen_name', 'statuses_count', 'verified', 'average_tweets_per_day', 'account_age_days']

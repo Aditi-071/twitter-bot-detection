@@ -1,0 +1,66 @@
+{
+  "label_column": "account_type",
+  "label_mapping": {
+    "bot": 1,
+    "human": 0
+  },
+  "feature_columns": [
+    "Unnamed: 0",
+    "created_at",
+    "default_profile",
+    "default_profile_image",
+    "description",
+    "favourites_count",
+    "followers_count",
+    "friends_count",
+    "geo_enabled",
+    "lang",
+    "location",
+    "profile_background_image_url",
+    "profile_image_url",
+    "screen_name",
+    "statuses_count",
+    "verified",
+    "average_tweets_per_day",
+    "account_age_days"
+  ],
+  "text_columns": [
+    "description",
+    "lang",
+    "location",
+    "screen_name"
+  ],
+  "numeric_columns": [
+    "Unnamed: 0",
+    "favourites_count",
+    "followers_count",
+    "friends_count",
+    "statuses_count",
+    "average_tweets_per_day",
+    "account_age_days"
+  ],
+  "categorical_columns": [
+    "default_profile",
+    "default_profile_image",
+    "geo_enabled",
+    "profile_background_image_url",
+    "verified"
+  ],
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.7776442307692307,
+      "precision_bot": 0.6323434473854099,
+      "recall_bot": 0.7883299798792757,
+      "f1_bot": 0.7017732401934443,
+      "roc_auc": 0.8686767818584503
+    },
+    "Linear SVM": {
+      "accuracy": 0.7709668803418803,
+      "precision_bot": 0.6230031948881789,
+      "recall_bot": 0.7847082494969819,
+      "f1_bot": 0.6945681211041852,
+      "roc_auc": 0.8582099834666606
+    }
+  },
+  "selected_model_by_bot_f1": "Logistic Regression"
+}
